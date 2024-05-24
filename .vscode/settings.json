@@ -1,0 +1,13 @@
+{
+  // "liveServer.settings.port": 5501
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "windicss.sortOnSave": true,
+  "windicss.colorDecoratorsType": "bg"
+}

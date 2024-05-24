@@ -1,0 +1,14 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+node_modules/*
+**/impact-js/*
+
+lib/
+
+analytics/*
+.secret/*
+
+todo-list.md
