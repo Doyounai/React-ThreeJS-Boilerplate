@@ -2,7 +2,7 @@
 <div align="center"><b>Create by KhunGnok</b></div>
 
 **_<p>About this boilerplate</P>_**
-React + ViteJS Typscript boilerplate that able to display 3d scene by [ThreeJS](https://threejs.org/). This project base on Domain Driven Design (DDD). So that, Routes will be in `frontend/domain`. Compoent using globally put in `global/component`. API calling in `API`.
+React + ViteJS Typscript boilerplate that able to display 3d scene by [ThreeJS](https://threejs.org/). This project base on Domain Driven Design (DDD). So that, Routes will be in `frontend/domain`. Compoent used globally put in `global/component`. API caller in `API`.
 
 # Quick start
 
