@@ -1,30 +1,78 @@
-# React + TypeScript + Vite
+<div align="center"><b><h1># React ThreeJS Vite Boilerplate #</h1></b></div>
+<div align="center"><b>Create by KhunGnok</b></div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**_<p>About this boilerplate</P>_**
+React + ViteJS Typscript boilerplate that able to display 3d scene by [ThreeJS](https://threejs.org/). This project base on Domain Driven Design (DDD). So that, Routes will be in `frontend/domain`. Compoent using globally put in `global/component`. API calling in `API`.
 
-Currently, two official plugins are available:
+# Quick start
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**1. Install Nessessory Vs Code Extension**
 
-## Expanding the ESLint configuration
+be sure you have install Vs Code Extension to gain fully project feature.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+| Name                      | Link                                                                          | Note                           |
+| ------------------------- | ----------------------------------------------------------------------------- | ------------------------------ |
+| ESlint                    | https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint    |                                |
+| Prettier - Code formatter | https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode    | Code Fomatter                  |
+| Tailwind CSS IntelliSense | https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss | Tailwind CSS coding suggestion |
 
-- Configure the top-level `parserOptions` property like this:
+**2. Follow**
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. Make sure that you have installed NodeJS and npm.
+2. Clone / Download this repo.
+3. Move to directory `cd <project-directory>`
+4. Edit project-name in `package.json` file
+5. Run `npm install`
+6. Done 😀
+
+# NPM Package
+
+dependencies:
+
+| Name        | Version | Note |
+| ----------- | ------- | ---- |
+| React       | 18.2.0  |      |
+| React-dom   | 18.2.0  |      |
+| react-icons | 5.2.1   |      |
+| axios       | 1.7.2   |      |
+
+devDependencies
+
+| Name                             | Version | Note                 |
+| -------------------------------- | ------- | -------------------- |
+| @types/...                       |         | All type as possible |
+| eslint                           | 8.57.0  |                      |
+| eslint                           | 8.57.0  |                      |
+| eslint-config-prettier           | 9.1.0   |                      |
+| eslint-plugin-check-file         | 2.8.0   |                      |
+| eslint-plugin-import             | 2.29.1  |                      |
+| eslint-plugin-jsx-a11y           | 6.8.0   |                      |
+| eslint-plugin-prettier           | 5.1.3   |                      |
+| eslint-plugin-react              | 7.34.1  |                      |
+| eslint-plugin-react-hooks        | 4.6.0   |                      |
+| eslint-plugin-react-refresh      | 0.4.6   |                      |
+| eslint-plugin-simple-import-sort | 12.1.0  |                      |
+| eslint-plugin-unicorn            | 53.0.0  |                      |
+| prettier                         | 3.2.5   |                      |
+| typescript                       | 5.2.2   |                      |
+| vite                             | 5.2.0   |                      |
+| vite-plugin-windicss             | 1.9.3   |                      |
+| windicss                         | 3.5.6   |                      |
+
+# How to use
+
+document
+
+> Comming soon 😏
+
+run dev
+
+```node
+npm run start
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+run build
+
+```node
+npm run build
+```
