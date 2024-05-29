@@ -19,7 +19,6 @@ export const InitI18n = (i18nList: I18n[]) => {
     }
   }
 
-  console.log(resource);
   console.log('Init I18N');
 
   i18next

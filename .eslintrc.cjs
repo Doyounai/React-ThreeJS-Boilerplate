@@ -73,5 +73,6 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'warn',
     // Custom Setting
     'jsx-a11y/anchor-is-valid': 'off',
+    '@typescript-eslint/no-unused-vars': 'warn',
   },
 };
