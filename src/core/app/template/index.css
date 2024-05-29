@@ -1,0 +1,33 @@
+.menu-list {
+  display: flex;
+}
+
+.menu-btn {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+@media screen and (max-width: 960px) {
+  .menu-list {
+    width: 100%;
+    position: absolute;
+    display: none;
+    top: 70px;
+    left: 0;
+  }
+  .menu-list > div {
+    width: 100%;
+    text-align: center;
+    background-color: #ffa98c;
+    padding: 15px 5px;
+  }
+  .menu-btn {
+    display: block;
+  }
+}
+
+.display-block {
+  display: block;
+}
