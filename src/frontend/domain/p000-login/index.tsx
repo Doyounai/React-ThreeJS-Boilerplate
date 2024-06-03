@@ -1,9 +1,11 @@
+import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaUser } from 'react-icons/fa';
 import { RiLockPasswordFill } from 'react-icons/ri';
 import { useNavigate } from 'react-router-dom';
 
 import FullScreenModal from '../../global/components/fullscreen-modal';
+import { SetMethodStoreGlobal } from '../../global/store';
 import thai from './assets/thailand-svgrepo-com.svg';
 import eng from './assets/united-states-of-america-svgrepo-com.svg';
 import { I18nDomainResource } from './i18n';

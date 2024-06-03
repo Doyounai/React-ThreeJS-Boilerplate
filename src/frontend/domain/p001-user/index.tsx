@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
+import { UseStoreGlobal } from '../../global/store';
 import { I18nDomainResource } from './i18n';
 
 const domainName = 'user';
