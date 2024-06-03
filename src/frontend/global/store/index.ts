@@ -29,7 +29,7 @@ export const UseStoreGlobal = (
   return StateMapping(stateList, StoreGlobal, isShallow) as TypeStoreGlobal;
 };
 
-export const SetMethodStoreGlobal = (): TypeSetMethodStoreGlobal => {
+export const GetSetMethodStoreGlobal = (): TypeSetMethodStoreGlobal => {
   return setMethodStoreGlobal;
 };
 
