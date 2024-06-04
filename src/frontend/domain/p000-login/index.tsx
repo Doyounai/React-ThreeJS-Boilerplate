@@ -3,7 +3,6 @@ import { FaUser } from 'react-icons/fa';
 import { RiLockPasswordFill } from 'react-icons/ri';
 import { useNavigate } from 'react-router-dom';
 
-import APIGlobal from '../../global/api/firebase';
 import FullScreenModal from '../../global/components/fullscreen-modal';
 import thai from './assets/thailand-svgrepo-com.svg';
 import eng from './assets/united-states-of-america-svgrepo-com.svg';

@@ -7,8 +7,8 @@ declare global {
     data: any;
   } & Record<string, any>;
 
-  type TypeAPIDataGolangResponse = {
-    res: TypeAPIData | null;
+  type TypeAPIDataGolangResponse<T> = {
+    res: T | null;
     error: Error | null;
   };
 }

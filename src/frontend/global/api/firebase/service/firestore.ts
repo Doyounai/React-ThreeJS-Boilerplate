@@ -18,7 +18,7 @@ import { GolangResponse } from '../../../helper/golang';
 
 export const ReadUserProfile = async (payload: {
   docId: string;
-}): Promise<TypeAPIDataGolangResponse> => {
+}): Promise<TypeAPIDataGolangResponse<User>> => {
   const refCollection = collection(GetFirestore(), 'users');
   const refDoc = doc(refCollection, payload.docId);
   const resUser = await GolangResponse(getDoc(refDoc));
@@ -28,7 +28,7 @@ export const ReadUserProfile = async (payload: {
     return resUser;
   }
 
-  const res: TypeAPIData = { data: (resUser.res as DocumentSnapshot).data() };
+  const res: User = (resUser.res as DocumentSnapshot).data()?.data;
 
-  return { res, error: null };
+  return { res: res, error: null };
 };
