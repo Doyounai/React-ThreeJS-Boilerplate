@@ -3,6 +3,7 @@ import { FaUser } from 'react-icons/fa';
 import { RiLockPasswordFill } from 'react-icons/ri';
 import { useNavigate } from 'react-router-dom';
 
+import APIGlobal from '../../global/api/firebase';
 import FullScreenModal from '../../global/components/fullscreen-modal';
 import thai from './assets/thailand-svgrepo-com.svg';
 import eng from './assets/united-states-of-america-svgrepo-com.svg';
@@ -44,6 +45,7 @@ const JSX = () => {
                 placeholder="email"
                 type="email"
                 className="border-[2px] my-1 w-full p-1"
+                autoComplete="username"
               ></input>
             </div>
           </div>
@@ -55,6 +57,7 @@ const JSX = () => {
                 placeholder="password"
                 type="password"
                 className="border-[2px] my-1 w-full p-1"
+                autoComplete="current-password"
               ></input>
             </div>
           </div>
