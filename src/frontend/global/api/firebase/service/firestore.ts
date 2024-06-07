@@ -28,7 +28,7 @@ export const ReadUserProfile = async (payload: {
     return resUser;
   }
 
-  const res: User = (resUser.res as DocumentSnapshot).data()?.data;
+  const res: User = (resUser.res as DocumentSnapshot).data() as User;
 
   return { res: res, error: null };
 };
