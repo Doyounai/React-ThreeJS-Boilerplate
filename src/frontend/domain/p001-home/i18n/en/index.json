@@ -1,0 +1,5 @@
+{
+  "header": "React+Three JS Boilerplate",
+  "createBy": "create by KhunGnok",
+  "selectLang": "React + ViteJS Typscript boilerplate that able to display 3d scene by ThreeJS. This project base on Domain Driven Design (DDD). So that, Routes will be in frontend/domain. Compoent used globally put in global/component. API caller in API."
+}

@@ -1,0 +1,5 @@
+{
+  "header": "React+Three JS Boilerplate",
+  "createBy": "ออกแบบโดย KhunGnok",
+  "selectLang": "โครงสร้างโปรเจค React + ViteJS with TypeScript พร้อมแสดงฉาก 3 มิติด้วย ThreeJS โครงสร้างนี้ยึดตามหลักการออกแบบ Domain-Driven Design (DDD) ไฟล์ Route จะอยู่ที่ frontend/domain คอมโพเนนต์ที่ใช้ทั่วไปจะอยู่ที่ global/component ส่วนของการติดต่อ API จะอยู่ที่ไดเรคทอรี API"
+}

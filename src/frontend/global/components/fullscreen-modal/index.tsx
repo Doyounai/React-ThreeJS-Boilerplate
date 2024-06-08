@@ -10,7 +10,9 @@ const FullScreenModal: React.FC<ModalProps> = ({ children, isShow }) => {
 
   return isShow ? (
     <div className="flex h-screen py-auto w-screen justify-center items-center absolute pop-in">
-      <div className="bg-white h-auto rounded-2xl shadow-xl py-10 px-7">{children}</div>
+      <div className="bg-white h-auto rounded-2xl shadow-xl py-10 px-7 relative">
+        {children}
+      </div>
     </div>
   ) : (
     <></>

@@ -1,3 +1,7 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .gradient-wave {
   background: linear-gradient(-45deg, #ffc080, #ffa28f, #ff7ea3, #f2aaff);
   animation: gradient 15s ease infinite;
@@ -67,4 +71,16 @@
     opacity: 1;
     position: relative;
   }
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  font-style: italic;
+  margin: 10px 0;
 }
