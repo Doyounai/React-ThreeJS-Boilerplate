@@ -11,7 +11,7 @@ const Preload = lazy(() => import('./preload'));
 const Content = lazy(() => import('./content'));
 
 export interface IContentData {
-  data: User;
+  isLoading: boolean;
 }
 
 const JSX = () => {
@@ -23,6 +23,7 @@ const JSX = () => {
         <Preload
           onLoadComplete={(data: IContentData) => {
             setData(data);
+            console.log(data);
           }}
         />
       ) : (

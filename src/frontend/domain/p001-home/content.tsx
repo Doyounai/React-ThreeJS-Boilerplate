@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
 import FullScreenModal from '../../global/components/fullscreen-modal';
+import { GetSetMethodStoreGlobal } from '../../global/store';
 import { IContentData } from '.';
 import thai from './assets/thailand-svgrepo-com.svg';
 import eng from './assets/united-states-of-america-svgrepo-com.svg';
@@ -10,6 +11,7 @@ const Content = (props: { domainName: string; data?: IContentData }) => {
   const { domainName } = props;
   const navigate = useNavigate();
   const { t, i18n } = useTranslation([domainName]);
+  const { setIsLoading } = GetSetMethodStoreGlobal();
 
   return (
     <FullScreenModal isShow={true}>
@@ -37,7 +39,8 @@ const Content = (props: { domainName: string; data?: IContentData }) => {
         </div>
         <button
           onClick={() => {
-            navigate('/user');
+            setIsLoading(true);
+            navigate('/css');
           }}
           className="button"
         >

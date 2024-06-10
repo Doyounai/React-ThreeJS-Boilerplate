@@ -1,22 +1,19 @@
 import { useEffect } from 'react';
 
-import FirebaseAPI from '../../global/api/firebase';
+import { WaitForMilliSecond } from '../../global/helper/time';
+import { GetSetMethodStoreGlobal } from '../../global/store';
 import { IContentData } from '.';
 
 const Preload = (props: IPreloadProps<IContentData>) => {
-  const loadUser = async () => {
-    const resUser = await FirebaseAPI.ReadUserProfile({
-      docId: '1',
-    });
-
-    return resUser;
-  };
+  const { onLoadComplete } = props;
+  const { setIsLoading } = GetSetMethodStoreGlobal();
 
   useEffect(() => {
     (async () => {
-      const user = await loadUser();
+      await WaitForMilliSecond(1400);
+      setIsLoading(false);
 
-      props.onLoadComplete(user);
+      onLoadComplete({ isLoading: false });
     })();
   }, []);
 
