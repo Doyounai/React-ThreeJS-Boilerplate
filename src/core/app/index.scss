@@ -43,6 +43,21 @@
   touch-action: manipulation;
 }
 
+.button-submit {
+  @extend .button;
+  background-color: #66dc53;
+}
+
+.button-cancel {
+  @extend .button;
+  background-color: #dd2d20;
+}
+
+.button-muted {
+  @extend .button;
+  background-color: #a0a1b5;
+}
+
 .button:hover {
   box-shadow: rgba(0, 0, 0, 0.15) 0 3px 9px 0;
   transform: translateY(-3px);
