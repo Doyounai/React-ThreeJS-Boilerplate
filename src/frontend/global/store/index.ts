@@ -4,21 +4,27 @@ import { StateMapping } from '../helper/zustand';
 
 type TypeStoreGlobal = {
   name: string;
+  isLoading: boolean;
 };
 
 const StoreGlobal = create(
   (): TypeStoreGlobal => ({
     name: 'Gnok',
+    isLoading: true,
   }),
 );
 
 type TypeSetMethodStoreGlobal = {
   setName: (name: string) => void;
+  setIsLoading: (isLoading: boolean) => void;
 };
 
 const setMethodStoreGlobal: TypeSetMethodStoreGlobal = {
   setName: (name: string) => {
     StoreGlobal.setState({ name: name });
+  },
+  setIsLoading: (isLoading: boolean) => {
+    StoreGlobal.setState({ isLoading: isLoading });
   },
 };
 
