@@ -30,19 +30,29 @@ be sure you have install Vs Code Extension to gain fully project feature.
 
 dependencies:
 
-| Name        | Version | Note |
-| ----------- | ------- | ---- |
-| React       | 18.2.0  |      |
-| React-dom   | 18.2.0  |      |
-| react-icons | 5.2.1   |      |
-| axios       | 1.7.2   |      |
+| Name                             | Version | Note |
+| -------------------------------- | ------- | ---- |
+| React                            | 18.2.0  |      |
+| React-dom                        | 18.2.0  |      |
+| react-icons                      | 5.2.1   |      |
+| axios                            | 1.7.2   |      |
+| axios                            | 1.7.2   |
+| firebase                         | 10.12.2 |
+| i18next                          | 23.11.5 |
+| i18next-browser-languagedetector | 8.0.0   |
+| react                            | 18.2.0  |
+| react-dom                        | 18.2.0  |
+| react-i18next                    | 14.1.2  |
+| react-icons                      | 5.2.1   |
+| react-router-dom                 | 6.23.1  |
+| sass                             | 1.77.4  |
+| zustand                          | 4.5.2   |
 
 devDependencies
 
 | Name                             | Version | Note                 |
 | -------------------------------- | ------- | -------------------- |
 | @types/...                       |         | All type as possible |
-| eslint                           | 8.57.0  |                      |
 | eslint                           | 8.57.0  |                      |
 | eslint-config-prettier           | 9.1.0   |                      |
 | eslint-plugin-check-file         | 2.8.0   |                      |
@@ -79,6 +89,7 @@ npm run build
 ```
 
 # Blessing
+
 ```
 //                       _oo0oo_
 //                      o8888888o

@@ -9,7 +9,7 @@ const Preload = (props: IPreloadProps<IContentData>) => {
       docId: '1',
     });
 
-    return resUser;
+    return resUser.res;
   };
 
   useEffect(() => {
